@@ -1,0 +1,573 @@
+@font-face {
+    font-family: Practice;
+    src: url("Font/Practice/Practice-font.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Circe;
+    src: url("Font/Circe/circe.ttf");
+    src: url("Font/Circe/circe-bold.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f04d37;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: regular;
+    font-family: Circe;
+    font-size: 18pt;
+}
+
+h1 {
+    font-size: 10vw;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Practice;
+    color: #fff;
+    padding: 3vh;
+}
+
+h3 {
+    font-size: 3vw;
+    text-align: left;
+    margin: 0 auto;
+    font-weight: regular;
+    font-family: Circe;
+    color: #ffe1e1;
+    padding: 3vh;
+}
+
+h2 {
+    font-size: 3vw;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: regular;
+    font-family: Practice;
+    color: #fff;
+    padding: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: #f04d37;
+}
+
+.main_content {
+    background-image: url("img/main_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 30px auto 0;
+    height: 30vw;
+}
+
+.nav_bar {
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.head_tittle {
+    background-color: #000;
+}
+
+.flex {
+    display: flex;
+    background-color: #fff;
+    height: 818px;
+    align-items: center;
+}
+
+.hand_container {
+    background-image: url("img/hand_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 100px 0 0 0;
+    width: 50%;
+    height: 32vw;
+}
+
+.loupe_container {
+    background-image: url("img/loupe_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 100px 0 0 0;
+    width: 50%;
+    height: 32vw;
+}
+
+.info_block {
+    background-color: #f04d37;
+    width: 100%;
+    margin: 100px 0 0 0;
+}
+
+.info_block .container {
+    padding: 60px 0;
+    display: flex;
+}
+
+.first_info {
+    width: 50%;
+    padding: 10px;
+}
+
+.second_info {
+    width: 50%;
+    padding: 10px;
+}
+
+.info_title {
+    font-size: 32px;
+    text-align: left;
+    margin: 0 auto;
+    font-weight: regular;
+    font-family: Circe;
+    color: #fff;
+}
+
+.info_div {
+    font-size: 18px;
+    text-align: left;
+    margin: 0 auto;
+    font-weight: regular;
+    font-family: Circe;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.info_div span {
+    padding: 0 10px;
+}
+
+.info_div img {
+    width: 16px;
+    height: 16px;
+}
+
+.slide-arrow {
+    background-image: url("img/arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3.646vw;
+    height: 7.083vw;
+    right: 40px;
+    cursor: pointer;
+    opacity: 10%;
+}
+
+.slide-arrow:hover {
+    background-image: url("img/arrow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3.646vw;
+    height: 7.083vw;
+    right: 32px;
+    transition: all 1s ease-out;
+    opacity: 100%;
+}
+
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.advice_block {
+    background-color: #000;
+    color: #fff;
+}
+
+.advice_title {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: regular;
+    font-family: Circe;
+    color: #fff;
+    padding: 30px;
+}
+
+.advice_bg {
+    background-image: url("img/arround_dot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 818px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice_info {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Circe;
+    color: #fff;
+}
+
+.rgb_content {
+    background-color: #fff;
+}
+
+.rgb_text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 250%;
+}
+
+.rgbbg_container {
+    background-image: url("img/rgb_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    background-size: 45%;
+    height: 818px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dpi_content {
+    background-color: #fff;
+}
+
+.dpi_text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 250%;
+}
+
+.dpibg_container {
+    background-image: url("img/dpi_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    background-size: 55%;
+    height: 818px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.japanbg_container {
+    background-image: url("img/japan_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    background-size: 50%;
+    height: 818px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filesbg_container {
+    background-image: url("img/files_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    background-size: 44%;
+    height: 818px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bonus_block {
+    background-color: #fbc4c4;
+}
+
+.bonusbg_container {
+    background-image: url("img/bonus_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    background-size: 33%;
+    height: 905px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bonus_text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 250%;
+}
+
+.footer {
+    background-color: #222222;
+}
+
+h4 {
+    font-size: 3vw;
+    text-align: left;
+    font-weight: regular;
+    font-family: Practice;
+    color: #fff;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.content img {
+    width: 59px;
+    height: 51px;
+}
+
+.themes {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 160px 0 0 0;
+}
+
+.social_link span,
+a {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.links {
+    padding: 40px 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: transform .15s ease-in-out;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 769px) {
+    #cursor {
+        display: none;
+    }
+    .main_content {
+        height: 80vw;
+    }
+    .flex {
+        height: 878px;
+        flex-wrap: wrap;
+    }
+    .hand_container {
+        width: 100%;
+        height: 35%;
+        margin: 30px 0 0 0;
+    }
+    .loupe_container {
+        width: 100%;
+        height: 35%;
+        margin: 30px 0 0 0;
+    }
+    .advice_bg {
+        height: 878px;
+        background-size: 95%;
+    }
+    .rgbbg_container {
+        height: 878px;
+    }
+    .dpibg_container {
+        height: 878px;
+        background-size: 70%;
+    }
+    .japanbg_container {
+        height: 878px;
+        background-size: 70%;
+    }
+    .filesbg_container {
+        height: 900px;
+        background-size: 70%;
+    }
+    .bonus_text h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .nav_bar {
+        display: none;
+    }
+    .main_content {
+        height: 80vw;
+    }
+    .advice_title {
+        font-size: 24px;
+        padding: 12px;
+    }
+    .advice_info {
+        font-size: 10px;
+    }
+    .flex {
+        height: 1162px;
+        flex-wrap: wrap;
+    }
+    .hand_container {
+        width: 100%;
+        height: 35%;
+        margin: 30px 0 0 0;
+    }
+    .loupe_container {
+        width: 100%;
+        height: 35%;
+        margin: 30px 0 0 0;
+    }
+    .advice_bg {
+        height: 1162px;
+        background-size: 95%;
+    }
+    .rgbbg_container {
+        height: 1162px;
+    }
+    .dpibg_container {
+        height: 1162px;
+        background-size: 70%;
+    }
+    .japanbg_container {
+        height: 1162px;
+        background-size: 70%;
+    }
+    .filesbg_container {
+        height: 1162px;
+        background-size: 70%;
+    }
+    .bonus_text h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width :414px) {
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    a {
+        font-size: 8px;
+    }
+    .main_content {
+        height: 80vw;
+    }
+    .info_block {
+        margin: 30px 0;
+    }
+    .info_block .container {
+        padding: 0;
+    }
+    .info_title {
+        font-size: 18px;
+    }
+    .info_div {
+        font-size: 10px;
+    }
+    .advice_title {
+        font-size: 24px;
+        padding: 12px;
+    }
+    .advice_info {
+        font-size: 8px;
+    }
+    .flex {
+        height: 662px;
+        flex-wrap: wrap;
+    }
+    .hand_container {
+        width: 100%;
+        height: 35%;
+        margin: 30px 0 0 0;
+    }
+    .loupe_container {
+        width: 100%;
+        height: 35%;
+        margin: 30px 0 0 0;
+    }
+    .advice_bg {
+        height: 662px;
+        background-size: 95%;
+    }
+    .rgbbg_container {
+        height: 662px;
+        background-size: 95%;
+    }
+    .dpibg_container {
+        height: 662px;
+        background-size: 100%;
+    }
+    .japanbg_container {
+        height: 662px;
+        background-size: 100%;
+    }
+    .filesbg_container {
+        height: 662px;
+        background-size: 100%;
+    }
+    .bonus_text h2 {
+        font-size: 27px;
+    }
+    .content {
+        padding: 0 120px;
+    }
+    .bonusbg_container {
+        background-size: 90%;
+    }
+    .links {
+        padding: 40px 55px;
+    }
+}
